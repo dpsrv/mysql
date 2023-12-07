@@ -1,5 +1,5 @@
 services:
-  mysql:
+  dpsrv-mysql:
     image: mysql:latest
     container_name: dpsrv-mysql
     env_file:
