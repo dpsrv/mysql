@@ -1,4 +1,4 @@
-#!/bin/ash -ex
+#!/bin/bash -ex
 
 SWD=$( cd $(dirname $0); pwd )
 
