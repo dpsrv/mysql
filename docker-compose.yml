@@ -5,7 +5,7 @@ services:
     container_name: dpsrv-mysql
     env_file:
       - ${DPSRV_HOME}/rc/secrets/mysql/mysql.env
-      - ${DPSRV_HOME}/local.env
+      - ${DPSRV_HOME}/rc/secrets/local/${HOSTNAME}/local.env
     ports:
       - "53306:3306"
     volumes:
