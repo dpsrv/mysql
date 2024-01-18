@@ -1,8 +1,8 @@
 services:
   dpsrv-mysql:
+    container_name: dpsrv-mysql-${tag:-latest}
+    image: dpsrv/mysql:${tag:-latest}
     build: .
-    image: dpsrv/mysql
-    container_name: dpsrv-mysql
     env_file:
       - ${DPSRV_HOME}/rc/secrets/mysql/mysql.env
       - ${DPSRV_HOME}/rc/secrets/local/${HOSTNAME}/local.env
