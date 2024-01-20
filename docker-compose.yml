@@ -3,6 +3,7 @@ services:
     container_name: dpsrv-mysql-${tag:-latest}
     image: dpsrv/mysql:${tag:-latest}
     build: .
+    hostname: $HOSTNAME.dpsrv.me
     env_file:
       - ${DPSRV_HOME}/rc/secrets/mysql/mysql.env
       - ${DPSRV_HOME}/rc/secrets/local/${HOSTNAME}/local.env
