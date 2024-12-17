@@ -4,4 +4,4 @@ RUN microdnf install -y bind-utils
 
 COPY replication /opt/replication
 
-CMD [ "mysqld", "--mysql-native-password=ON", "--log-error-verbosity=3" ]
+CMD [ "mysqld", "--mysql-native-password=ON", "--innodb-use-native-aio=OFF", "--log-error-verbosity=3" ]
