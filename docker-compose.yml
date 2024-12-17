@@ -10,7 +10,7 @@ services:
     ports:
       - "53306:3306"
     volumes:
-      - ${DPSRV_HOME}/rc/secrets/mysql/conf.d/:/etc/mysql/conf.d1/
+      - ${DPSRV_HOME}/rc/secrets/mysql/conf.d/:/etc/mysql/conf.d/
       - ${DPSRV_NODE_HOME}/srv/mysql/:/var/lib/mysql/
       - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
